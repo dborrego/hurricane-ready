@@ -2,7 +2,7 @@
 
 **AI-powered hurricane prep for Miami homeowners.**
 
-Live demo: [hurricaneready.ai](https://hurricane-ready.vercel.app) (pending deployment)
+**🌐 Live Demo:** [dborrego.github.io/hurricane-ready](https://dborrego.github.io/hurricane-ready/)
 
 ![HurricaneReady.ai](https://img.shields.io/badge/Status-MVP-blue) ![Miami](https://img.shields.io/badge/Location-Miami--Dade-teal)
 
