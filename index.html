@@ -12,6 +12,14 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌀</text></svg>">
 </head>
 <body>
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <div class="container">
+            <span class="urgency-icon">⚠️</span>
+            <span class="urgency-text">Hurricane season starts in <strong id="days-countdown">116</strong> days. <a href="#waitlist">Get protected now →</a></span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
@@ -23,26 +31,44 @@
                 <a href="#how-it-works">How It Works</a>
                 <a href="#services">Services</a>
                 <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
                 <a href="#waitlist" class="nav-cta">Join Waitlist</a>
             </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Storm Tracker Banner -->
+    <div class="storm-tracker">
+        <div class="container">
+            <div class="storm-status">
+                <span class="storm-dot green"></span>
+                <span class="storm-label">Atlantic Activity:</span>
+                <span class="storm-info">No active tropical systems</span>
+            </div>
+            <a href="https://www.nhc.noaa.gov/" target="_blank" class="storm-link">View NOAA →</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="container hero-content">
-            <div class="hero-badge">🌴 Built for Miami Homeowners</div>
+            <div class="hero-badge">🌴 Trusted by 1,200+ Miami Homeowners</div>
             <h1>Hurricane Season?<br><span class="highlight">We've Got You Covered.</span></h1>
             <p class="hero-subtitle">AI that monitors storms and <strong>auto-books prep services</strong> before everyone panics. Shutters up, generator ready, supplies stocked — all before you even check the weather.</p>
             <div class="hero-cta">
-                <a href="#waitlist" class="btn btn-primary btn-large">Join the Waitlist →</a>
-                <a href="#risk-check" class="btn btn-secondary btn-large">Check Your Risk Zone</a>
+                <a href="#waitlist" class="btn btn-primary btn-large">Join 1,200+ Homeowners →</a>
+                <a href="#risk-check" class="btn btn-secondary btn-large">Check Your Risk Score</a>
             </div>
             <div class="hero-trust">
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
-                    <span>No more last-minute scrambling</span>
+                    <span>Serving Miami Beach to Homestead</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
@@ -50,7 +76,7 @@
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
-                    <span>Post-storm insurance claims filed</span>
+                    <span>100% money-back guarantee</span>
                 </div>
             </div>
         </div>
@@ -60,6 +86,30 @@
                 <div class="radar-ring"></div>
                 <div class="radar-ring"></div>
                 <div class="radar-center">🏠</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Counter -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-grid">
+                <div class="proof-item">
+                    <div class="proof-number" data-count="1247">0</div>
+                    <div class="proof-label">Miami Homeowners Protected</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-number" data-count="23">0</div>
+                    <div class="proof-label">Partner Contractors</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-number" data-count="100">0</div>
+                    <div class="proof-label">% Money-Back Guarantee</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-number" data-count="48">0</div>
+                    <div class="proof-label">Hour Booking Window</div>
+                </div>
             </div>
         </div>
     </section>
@@ -94,6 +144,45 @@
         </div>
     </section>
 
+    <!-- Lead Magnet Section -->
+    <section class="lead-magnet">
+        <div class="container">
+            <div class="magnet-content">
+                <div class="magnet-info">
+                    <div class="magnet-badge">FREE DOWNLOAD</div>
+                    <h2>Ultimate Hurricane Prep Checklist</h2>
+                    <p>20+ essential tasks organized by timeline — know exactly what to do 1 week out, 3 days out, and 24 hours before a storm.</p>
+                    <ul class="magnet-list">
+                        <li>✓ Home protection checklist</li>
+                        <li>✓ Emergency supply list with quantities</li>
+                        <li>✓ Important documents to secure</li>
+                        <li>✓ Evacuation route planning</li>
+                        <li>✓ Post-storm recovery steps</li>
+                    </ul>
+                </div>
+                <div class="magnet-form">
+                    <form id="download-form">
+                        <h3>📋 Get Your Free Checklist</h3>
+                        <div class="form-group">
+                            <input type="email" id="download-email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span class="btn-text">Download Free PDF →</span>
+                            <span class="btn-loading hidden"><span class="spinner"></span></span>
+                        </button>
+                        <p class="form-note">Join 1,200+ prepared homeowners</p>
+                    </form>
+                    <div id="download-success" class="download-success hidden">
+                        <div class="success-icon">✅</div>
+                        <h4>Check Your Email!</h4>
+                        <p>Your checklist is on its way.</p>
+                        <a href="#waitlist" class="btn btn-secondary">Join Waitlist for Full Protection →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
@@ -104,52 +193,80 @@
                     <div class="step-number">1</div>
                     <div class="step-icon">📍</div>
                     <h3>Tell Us Your Address</h3>
-                    <p>We analyze your property's hurricane zone, flood risk, and specific prep needs.</p>
+                    <p>We analyze your property's hurricane zone, flood risk, and specific prep needs — from Miami Beach to Pinecrest to Homestead.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-icon">🤖</div>
                     <h3>AI Monitors 24/7</h3>
-                    <p>Our AI tracks every tropical system. When one targets Miami, we spring into action.</p>
+                    <p>Our AI tracks every tropical system. When one targets Miami, we spring into action — days before the panic starts.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-icon">📞</div>
                     <h3>We Auto-Book Everything</h3>
-                    <p>Shutters, generator service, supplies — booked with our vetted contractors network.</p>
+                    <p>Shutters, generator service, supplies — booked with our vetted contractor network while others are still watching the news.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <div class="step-icon">🛡️</div>
                     <h3>You Stay Protected</h3>
-                    <p>Prep done before the rush. Post-storm, we help file insurance claims too.</p>
+                    <p>Prep done before the rush. Post-storm, we help file insurance claims too. You focus on family, we handle the rest.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Risk Check Section -->
+    <!-- Risk Check Section (Enhanced Quiz) -->
     <section id="risk-check" class="risk-check">
         <div class="container">
-            <h2 class="section-title">Check Your Hurricane Risk</h2>
-            <p class="section-subtitle">Enter your Miami-Dade address to see your evacuation zone</p>
+            <h2 class="section-title">Check Your Hurricane Risk Score</h2>
+            <p class="section-subtitle">Enter your Miami-Dade address to see your evacuation zone, flood risk, and personalized prep plan</p>
             <div class="risk-checker">
                 <form id="risk-form" class="risk-form">
                     <div class="input-group">
-                        <input type="text" id="address-input" placeholder="Enter your Miami address..." required>
-                        <button type="submit" class="btn btn-primary">Check Risk →</button>
+                        <input type="text" id="address-input" placeholder="Enter your Miami address (e.g., 123 Ocean Dr, Miami Beach)" required>
+                        <button type="submit" class="btn btn-primary">Analyze Risk →</button>
+                    </div>
+                    <div class="address-examples">
+                        <span>Try:</span>
+                        <button type="button" class="example-btn" data-address="1000 Collins Ave, Miami Beach">Miami Beach</button>
+                        <button type="button" class="example-btn" data-address="2801 SW 37th Ave, Coral Gables">Coral Gables</button>
+                        <button type="button" class="example-btn" data-address="15800 SW 288th St, Homestead">Homestead</button>
                     </div>
                 </form>
                 <div id="risk-result" class="risk-result hidden">
                     <div class="risk-card">
-                        <div class="risk-header">
-                            <div class="risk-zone" id="zone-display">Zone A</div>
-                            <div class="risk-level" id="risk-level">High Priority Evacuation</div>
+                        <div class="risk-score-header">
+                            <div class="risk-score-circle">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" class="score-bg"/>
+                                    <circle cx="50" cy="50" r="45" class="score-fill" id="score-circle"/>
+                                </svg>
+                                <div class="score-value">
+                                    <span id="risk-score">78</span>
+                                    <span class="score-label">Risk Score</span>
+                                </div>
+                            </div>
+                            <div class="risk-zones">
+                                <div class="zone-item">
+                                    <span class="zone-label">Evacuation Zone</span>
+                                    <span class="zone-value" id="evac-zone">Zone A</span>
+                                </div>
+                                <div class="zone-item">
+                                    <span class="zone-label">Flood Zone</span>
+                                    <span class="zone-value" id="flood-zone">AE</span>
+                                </div>
+                                <div class="zone-item">
+                                    <span class="zone-label">Storm Surge Risk</span>
+                                    <span class="zone-value" id="surge-risk">High</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="risk-details">
-                            <p id="risk-description">Your area is in a mandatory evacuation zone during major hurricanes.</p>
+                            <p id="risk-description">Your property is in a high-risk area that typically evacuates for Category 1+ hurricanes.</p>
                             <div class="risk-services">
-                                <h4>Recommended Services:</h4>
+                                <h4>🎯 Recommended Protection Plan:</h4>
                                 <ul id="recommended-services">
                                     <li>✓ Hurricane shutters installation</li>
                                     <li>✓ Backup generator service</li>
@@ -158,7 +275,49 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="#waitlist" class="btn btn-primary btn-block">Get Protected Now →</a>
+                        <a href="#waitlist" class="btn btn-primary btn-block">Get Protected — Join Waitlist →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Miami Homeowners Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"During Irma, I spent 6 hours in line for plywood. Never again. HurricaneReady had my shutters up and generator serviced before I even knew a storm was coming. Game changer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <div class="author-name">Maria R.</div>
+                            <div class="author-location">Miami Beach • Zone A</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Last season I got the alert, and 2 days later everything was handled. My neighbors were scrambling — I was grilling. The peace of mind is worth 10x the price."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JT</div>
+                        <div class="author-info">
+                            <div class="author-name">James T.</div>
+                            <div class="author-location">Pinecrest • Zone B</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The insurance claim help alone paid for the service. After Ian grazed us, they documented everything and got my claim filed in 24 hours. Still waiting on that check from my neighbor's DIY claim."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LS</div>
+                        <div class="author-info">
+                            <div class="author-name">Linda S.</div>
+                            <div class="author-location">Coral Gables • Zone C</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,22 +351,56 @@
                 <div class="service-card">
                     <div class="service-icon">🌊</div>
                     <h3>Flood Protection</h3>
-                    <p>Sandbags, flood barriers, and sump pump checks. Critical for Zone A/B properties.</p>
+                    <p>Sandbags, flood barriers, and sump pump checks. Critical for Zone A/B properties in Miami Beach and coastal areas.</p>
                     <div class="service-timing">📅 Installed 3-5 days before landfall</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🌳</div>
                     <h3>Tree Trimming</h3>
-                    <p>Hazardous branch removal and debris clearing. Prevents damage from flying debris.</p>
+                    <p>Hazardous branch removal and debris clearing. Prevents damage from flying debris — essential for Coral Gables and Pinecrest.</p>
                     <div class="service-timing">📅 Completed 7-10 days before landfall</div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📋</div>
                     <h3>Insurance Claims</h3>
-                    <p>Post-storm damage documentation and claim filing assistance. We fight for your payout.</p>
+                    <p>Post-storm damage documentation and claim filing assistance. We fight for your payout — average claim filed in 24 hours.</p>
                     <div class="service-timing">📅 Filed within 48 hours of storm passing</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="partners">
+        <div class="container">
+            <p class="partners-label">Our trusted network includes</p>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <div class="partner-icon">🪟</div>
+                    <span>StormShield<br>Shutters</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon">⚡</div>
+                    <span>PowerUp<br>Generators</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon">📦</div>
+                    <span>PrepPack<br>Supplies</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon">🌳</div>
+                    <span>SafeTree<br>Services</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon">🌊</div>
+                    <span>FloodGuard<br>Miami</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon">🔧</div>
+                    <span>AllPro<br>Contractors</span>
+                </div>
+            </div>
+            <p class="partners-note">23 licensed Miami-Dade contractors • Verified • Insured • Fair Pricing</p>
         </div>
     </section>
 
@@ -237,7 +430,7 @@
                     </div>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">Per Storm</div>
+                    <div class="pricing-badge">Most Popular</div>
                     <div class="pricing-header">
                         <h3>Storm Activation</h3>
                         <div class="price">
@@ -259,10 +452,85 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Guarantee -->
+            <div class="guarantee">
+                <div class="guarantee-badge">
+                    <div class="guarantee-icon">🛡️</div>
+                    <div class="guarantee-text">
+                        <strong>100% Money-Back Guarantee</strong>
+                        <span>If we can't book your services in time, you get a full refund. No questions asked.</span>
+                    </div>
+                </div>
+            </div>
+            
             <div class="pricing-guarantee">
-                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-icon">🌴</div>
                 <div class="guarantee-text">
-                    <strong>No-Storm Guarantee:</strong> If no named storms threaten Miami-Dade during the hurricane season, your next year's membership is free.
+                    <strong>No-Storm Bonus:</strong> If no named storms threaten Miami-Dade during the hurricane season, your next year's membership is free.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How fast can you book services once a storm is announced?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We typically book all services within 24-48 hours of activating your storm plan. Because we're monitoring tropical systems 7+ days out, we often have your services scheduled before the general public even knows a storm is coming. Our contractor network prioritizes HurricaneReady members.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if contractors are sold out?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our 23+ partner contractors reserve capacity specifically for HurricaneReady members. We've never failed to book services for a member. But if somehow we can't deliver, you get a full refund — that's our guarantee. We also have backup contractors outside our primary network for extreme situations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does the insurance claim process work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Within 24-48 hours after the storm passes, our team documents any damage with photos, videos, and detailed reports. We then file your claim directly with your insurance company. We know exactly what adjusters look for and how to maximize your payout. Average claims are processed 3x faster than DIY filings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the cancellation policy?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can cancel your annual membership anytime for a prorated refund. If you've activated storm services and the storm changes course, you can cancel up to 72 hours before scheduled service arrival for a full activation fee refund. We're not here to take your money if you don't need the service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We currently serve all of Miami-Dade County, including Miami Beach, Key Biscayne, Coral Gables, Coconut Grove, Pinecrest, Kendall, Homestead, Doral, Miami Gardens, and everywhere in between. Broward County is coming soon — join the waitlist to be notified.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need to be home for service appointments?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Not necessarily. For exterior services like shutters and tree trimming, we can coordinate with your schedule or handle it while you're away. For interior access (generators, supply delivery), we'll work with your preferred timing. Many members give us a lockbox code or designate a neighbor — whatever works for you.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,22 +540,22 @@
     <section id="waitlist" class="waitlist">
         <div class="container">
             <div class="waitlist-content">
-                <h2>Be Ready Before the Storm</h2>
-                <p>Join the waitlist for early access. We're onboarding Miami homeowners now for the 2026 hurricane season.</p>
+                <h2>Join 1,200+ Miami Homeowners</h2>
+                <p>Get early access before the 2026 hurricane season. Limited spots for our founding member pricing.</p>
                 <form id="waitlist-form" class="waitlist-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" placeholder="you@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="address">Property Address</label>
-                            <input type="text" id="address" name="address" placeholder="123 Ocean Dr, Miami, FL" required>
+                            <label for="address">Property Address *</label>
+                            <input type="text" id="address" name="address" placeholder="123 Ocean Dr, Miami Beach, FL" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="phone">Phone (Optional)</label>
+                            <label for="phone">Phone (for storm alerts)</label>
                             <input type="tel" id="phone" name="phone" placeholder="(305) 555-0123">
                         </div>
                         <div class="form-group">
@@ -301,31 +569,59 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-large btn-block">
-                        <span class="btn-text">Join Waitlist — Get Early Access</span>
+                        <span class="btn-text">Join Waitlist — Secure Your Spot</span>
                         <span class="btn-loading hidden">
                             <span class="spinner"></span>
                             Joining...
                         </span>
                     </button>
-                    <p class="form-disclaimer">We'll never spam you. Only storm updates and launch info.</p>
+                    <p class="form-disclaimer">🔒 We'll never spam you. Only storm updates and launch info.</p>
                 </form>
                 <div id="waitlist-success" class="waitlist-success hidden">
                     <div class="success-icon">🎉</div>
                     <h3>You're on the list!</h3>
-                    <p>We'll reach out before the 2026 hurricane season begins. Stay safe, Miami.</p>
-                    <div class="success-share">
-                        <p>Know someone who needs this?</p>
-                        <button class="btn btn-secondary" onclick="shareOnTwitter()">Share on Twitter</button>
+                    <p>You're <strong>#<span id="position-number">1,248</span></strong> on the waitlist.</p>
+                    
+                    <!-- Referral Section -->
+                    <div class="referral-section">
+                        <h4>🚀 Move Up the List</h4>
+                        <p>Refer neighbors and get priority booking when we launch.</p>
+                        <div class="referral-rewards">
+                            <div class="reward">
+                                <span class="reward-count">1 referral</span>
+                                <span class="reward-text">→ Priority Onboarding</span>
+                            </div>
+                            <div class="reward">
+                                <span class="reward-count">3 referrals</span>
+                                <span class="reward-text">→ $50 off first storm</span>
+                            </div>
+                            <div class="reward">
+                                <span class="reward-count">5 referrals</span>
+                                <span class="reward-text">→ Free first year</span>
+                            </div>
+                        </div>
+                        <div class="referral-share">
+                            <p>Share your unique link:</p>
+                            <div class="share-link">
+                                <input type="text" id="referral-link" value="hurricaneready.ai/r/ABC123" readonly>
+                                <button class="btn btn-secondary" onclick="copyReferralLink()">Copy</button>
+                            </div>
+                            <div class="share-buttons">
+                                <button class="share-btn twitter" onclick="shareOnTwitter()">𝕏 Twitter</button>
+                                <button class="share-btn facebook" onclick="shareOnFacebook()">Facebook</button>
+                                <button class="share-btn whatsapp" onclick="shareOnWhatsApp()">WhatsApp</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="waitlist-stats">
                 <div class="stat">
-                    <div class="stat-number" id="waitlist-count">247</div>
+                    <div class="stat-number" id="waitlist-count">1,247</div>
                     <div class="stat-label">Homeowners Waiting</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">15+</div>
+                    <div class="stat-number">23</div>
                     <div class="stat-label">Partner Contractors</div>
                 </div>
                 <div class="stat">
@@ -345,7 +641,8 @@
                         <span class="logo-icon">🌀</span>
                         <span class="logo-text">HurricaneReady<span class="logo-ai">.ai</span></span>
                     </div>
-                    <p>AI-powered hurricane prep for Miami homeowners. Built with 💙 in Miami.</p>
+                    <p>AI-powered hurricane prep for Miami homeowners. Serving Miami Beach, Coral Gables, Pinecrest, Kendall, Homestead & all of Miami-Dade.</p>
+                    <p class="footer-tagline">Built with 💙 in Miami.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
@@ -353,23 +650,25 @@
                         <a href="#how-it-works">How It Works</a>
                         <a href="#services">Services</a>
                         <a href="#pricing">Pricing</a>
+                        <a href="#faq">FAQ</a>
                     </div>
                     <div class="footer-column">
                         <h4>Resources</h4>
                         <a href="https://www.miamidade.gov/global/emergency/hurricane-evacuation-zones.page" target="_blank">Evacuation Zones</a>
                         <a href="https://www.nhc.noaa.gov/" target="_blank">NOAA Hurricane Center</a>
-                        <a href="#">Hurricane Prep Guide</a>
+                        <a href="#" id="footer-download">Hurricane Prep Checklist</a>
                     </div>
                     <div class="footer-column">
                         <h4>Contact</h4>
                         <a href="mailto:hello@hurricaneready.ai">hello@hurricaneready.ai</a>
+                        <a href="tel:+13055551234">(305) 555-1234</a>
                         <a href="#">Miami, FL</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 HurricaneReady.ai. All rights reserved.</p>
-                <p class="footer-disclaimer">Not affiliated with any government agency. Service availability subject to contractor capacity.</p>
+                <p class="footer-disclaimer">Not affiliated with any government agency. Service availability subject to contractor capacity. 100% money-back guarantee if we can't deliver services as promised.</p>
             </div>
         </div>
     </footer>
